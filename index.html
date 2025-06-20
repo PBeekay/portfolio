@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkay Pekersoy - Junior Full-Stack Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional portfolio of Berkay Pekersoy, a junior full-stack developer specializing in enterprise solutions, cloud architecture, and modern web technologies.">
+    <meta name="keywords" content="full-stack developer, software engineer, web development, enterprise solutions, cloud architecture">
+    <meta name="author" content="Berkay Pekersoy">
+    <meta name="robots" content="index, follow">
+    
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Berkay Pekersoy - Junior Full-Stack Developer">
+    <meta property="og:description" content="Building enterprise-grade solutions with modern technologies">
+    <meta property="og:image" content="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/448415f1-2938-4dc2-9ebd-0c92035e3fd7.png">
+    <meta property="og:url" content="https://berkaypekersoy.dev">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <a href="#home" class="logo">
+                <div class="logo-icon">BP</div>
+                <span id="navName">Berkay Pekersoy</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link" id="navHome">Home</a></li>
+                <li><a href="#about" class="nav-link" id="navAbout">About</a></li>
+                <li><a href="#experience" class="nav-link" id="navExperience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" id="navProjects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" id="navContact">Contact</a></li>
+                <li>
+                    <select id="languageSwitcher" aria-label="Select language" style="padding: 8px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-tertiary); color: var(--text-primary);">
+                        <option value="en">EN</option>
+                        <option value="tr">TR</option>
+                        <option value="jp">JP</option>
+                    </select>
+                </li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="material-icons">brightness_4</span>
+                    </button>
+                </li>
+            </ul>
+
+            <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Toggle mobile menu">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle" id="heroSubtitle">Welcome to my portfolio</p>
+                <h1 class="hero-title" id="heroTitle">Junior Full-Stack Developer & Solutions Architect</h1>
+                <p class="hero-description" id="heroDescription">
+                    I build scalable enterprise applications with modern technologies, 
+                    specializing in cloud architecture and performance optimization.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" id="heroBtnProjects">
+                        <span class="material-icons">work</span>
+                        <span>View Projects</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" id="heroBtnContact">
+                        <span class="material-icons">mail</span>
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-image-container">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dot"></div>
+                            <div class="code-dot"></div>
+                            <div class="code-dot"></div>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="code-keyword">const</span> developer = {
+                            </div>
+                            <div class="code-line">
+                                &nbsp; name: <span class="code-string">"Berkay Pekersoy"</span>,
+                            </div>
+                            <div class="code-line">
+                                  role: <span class="code-string">"Junior Full-Stack Developer"</span>,
+                            </div>
+                            <div class="code-line">
+                                &nbsp; experience: <span class="code-number">"1",</span> <span class="code-comment">// years</span>
+                            </div>
+                            <div class="code-line">
+                                };
+                            </div>
+                            <br></br>
+                            <div style="display: flex; justify-content: center; align-items: center; gap: 24px; margin-top: 24px;">
+                                <a href="https://www.linkedin.com/in/berkay-pekersoy" target="_blank" aria-label="LinkedIn" style="color:inherit;text-decoration:none;">
+                                    <i class="fab fa-linkedin" style="font-size:2em; vertical-align:middle;"></i>
+                                </a>
+                                <a href="https://github.com/bpeekay" target="_blank" aria-label="GitHub" style="color:inherit;text-decoration:none;">
+                                    <i class="fab fa-github" style="font-size:2em; vertical-align:middle;"></i>
+                                </a>
+                                <a href="mailto:pekersoy.berkay@gmail.com" target="_blank" aria-label="Email" style="color:inherit;text-decoration:none;">
+                                    <i class="fas fa-envelope" style="font-size:2em; vertical-align:middle;"></i>
+                                </a>
+                            </div>
+                        <br></br>
+                            <div style="display: flex; justify-content: center; align-items: center; gap: 12px; margin-top: 16px; font-size: 1.1em; color: #ffffff;">
+                                <span>Currently working at</span>
+                                <a href="https://vr.net.tr" target="_blank" style="display: flex; align-items: center; gap: 6px; text-decoration: none; color: inherit;" aria-label="Veriyum">
+                                    <img src="https://www.vr.net.tr/wp-content/uploads/2023/05/vr.png.webp" alt="Veriyum Logo" style="height: 24px; width: auto;" />
+                                    <strong>Veriyum</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about animate-on-scroll" id="about">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle" id="aboutSubtitle">About Me</p>
+                <h2 class="section-title" id="aboutTitle">Professional Summary</h2>
+                <p class="section-description" id="aboutDesc">
+                    A decade of experience in building robust, scalable solutions for enterprise clients
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-image-container">
+                        <div class="about-image-wrapper">
+                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFWpheoASSTPQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681724832119?e=1755734400&v=beta&t=HtkypdkfrIFQQ557qmZde29ldJ1ZwmQqgGxpSHCtKZo" 
+                                 alt="Professional headshot of Berkay Pekersoy in business attire">
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <h3 id="aboutExcellence">Delivering Excellence Through Technology</h3>
+                    <p class="about-text" id="aboutText1">
+                        As a Junior Full-Stack Developer with over a decade of experience, 
+                        I specialize in architecting and implementing enterprise-grade solutions 
+                        that drive business growth and operational efficiency.
+                    </p>
+                    <p class="about-text" id="aboutText2">
+                        My expertise spans across modern web technologies, cloud platforms, 
+                        and DevOps practices. I'm passionate about clean code, scalable architectures, 
+                        and mentoring development teams to achieve their full potential.
+                    </p>
+
+                    <h3 id="aboutTech">Technical Expertise</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <span class="material-icons">code</span>
+                            </div>
+                            <div class="skill-info">
+                                <h4 id="skillFrontend">Frontend Development</h4>
+                                <p class="skill-level" id="skillFrontendList">React, TypeScript, Next.js</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <span class="material-icons">storage</span>
+                            </div>
+                            <div class="skill-info">
+                                <h4 id="skillBackend">Backend Development</h4>
+                                <p class="skill-level" id="skillBackendList">Node.js, Python, PostgreSQL</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <span class="material-icons">cloud</span>
+                            </div>
+                            <div class="skill-info">
+                                <h4 id="skillCloud">Cloud Architecture</h4>
+                                <p class="skill-level" id="skillCloudList">AWS, Azure, Kubernetes</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <span class="material-icons">speed</span>
+                            </div>
+                            <div class="skill-info">
+                                <h4 id="skillDevops">DevOps & CI/CD</h4>
+                                <p class="skill-level" id="skillDevopsList">Docker, Jenkins, GitOps</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience animate-on-scroll" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle" id="expSubtitle">Career Journey</p>
+                <h2 class="section-title" id="expTitle">Professional Experience</h2>
+                <p class="section-description" id="expDesc">
+                    Building innovative solutions at industry-leading companies
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" id="exp1Date">2025 - Present</div>
+                    <div class="timeline-content">
+                        <div class="company-header">
+                            <div class="company-logo">VR</div>
+                            <div>
+                                <h4 id="exp1Role">Junior Full-Stack Developer</h4>
+                                <p class="company-name" id="exp1Company">Veriyum</p>
+                            </div>
+                        </div>
+                        <p class="timeline-description" id="exp1Desc">
+                            Leading the development of microservices architecture for enterprise clients. 
+                            Implemented CI/CD pipelines reducing deployment time by 70%.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag" id="exp1Tag1">React</span>
+                            <span class="tag" id="exp1Tag2">Node.js</span>
+                            <span class="tag" id="exp1Tag3">Flutter</span>
+                            <span class="tag" id="exp1Tag4">JavaScript</span>
+                            <span class="tag" id="exp1Tag5">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" id="exp2Date">Dec 2023 - Aug 2024</div>
+                    <div class="timeline-content">
+                        <div class="company-header">
+                            <div class="company-logo">Google</div>
+                            <div>
+                                <h4 id="exp2Role">Flutter Developer - Intern</h4>
+                                <p class="company-name" id="exp2Company">Google</p>
+                            </div>
+                        </div>
+                        <p class="timeline-description" id="exp2Desc">
+                            Developed and tested Flutter-based mobile apps, increasing projected user engagement by 10% based on beta
+                            testing feedback.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag" id="exp2Tag1">Flutter</span>
+                            <span class="tag" id="exp2Tag2">Python</span>
+                            <span class="tag" id="exp2Tag3">Firebase</span>
+                            <span class="tag" id="exp2Tag4">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" id="exp3Date">May 2024 - Aug 2024</div>
+                    <div class="timeline-content">
+                        <div class="company-header">
+                            <div class="company-logo">YE</div>
+                            <div>
+                                <h4 id="exp3Role">Freelance Developer & Designer</h4>
+                                <p class="company-name" id="exp3Company">Yensis Energy Systems</p>
+                            </div>
+                        </div>
+                        <p class="timeline-description" id="exp3Desc">
+                            Integrated analytics tools to track user behavior, improving the website's conversion rate by 5%.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag" id="exp3Tag1">JavaScript</span>
+                            <span class="tag" id="exp3Tag2">HTML & CSS</span>
+                            <span class="tag" id="exp3Tag3">Photoshop</span>
+                            <span class="tag" id="exp3Tag4">Video Edit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects animate-on-scroll" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle" id="projSubtitle">Portfolio</p>
+                <h2 class="section-title" id="projTitle">Featured Projects</h2>
+                <p class="section-description" id="projDesc">
+                    A selection of projects that showcase my technical expertise and problem-solving abilities
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                <h3 id="projectsUnderConstruction" style="text-align: center; color: var(--text-secondary); font-size: 1.5rem;">
+                    Projects are under construction
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact animate-on-scroll" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle" id="contactSubtitle">Get In Touch</p>
+                <h2 class="section-title" id="contactTitle">Let's Discuss Your Project</h2>
+                <p class="section-description" id="contactDesc">
+                    I'm available for consulting, full-time opportunities, and interesting projects
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 id="contactInfoTitle">Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-icons">email</span>
+                        </div>
+                        <div class="contact-details">
+                            <h4 id="contactEmailTitle">Email</h4>
+                            <a href="mailto:pekersoy.berkay@gmail.com" id="contactEmail">pekersoy.berkay@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-icons">phone</span>
+                        </div>
+                        <div class="contact-details">
+                            <h4 id="contactPhoneTitle">Phone</h4>
+                            <a href="tel:+14155552671" id="contactPhone">+1 (415) 555-2671</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-icons">location_on</span>
+                        </div>
+                        <div class="contact-details">
+                            <h4 id="contactLocationTitle">Location</h4>
+                            <p id="contactLocation">Eskisehir, TR</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn Profile">
+                            <span class="material-icons">business</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub Profile">
+                            <span class="material-icons">code</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter Profile">
+                            <span class="material-icons">tag</span>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label" id="formNameLabel">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required placeholder="Full Name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label" id="formEmailLabel">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" required placeholder="Email Address" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label" id="formSubjectLabel">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required placeholder="Subject" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label" id="formMessageLabel">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" required placeholder="Message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="formSubmitBtn">
+                        <span class="material-icons">send</span>
+                        <span>Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="footer-text" id="footerCopyright">© 2025 Berkay. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/privacy" class="footer-text" id="footerPrivacy">Privacy Policy</a>
+                <span class="footer-text">•</span>
+                <a href="/terms" class="footer-text" id="footerTerms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <span class="material-icons">arrow_upward</span>
+    </button>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
