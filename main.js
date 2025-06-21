@@ -127,18 +127,6 @@ animatedElements.forEach(element => {
     observer.observe(element);
 });
 
-// Form Submission
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // Here you would normally send the form data to a server
-    // For now, we'll just show an alert
-    alert('Thank you for your message! I will get back to you soon.');
-    // Reset the form
-    contactForm.reset();
-});
-
 // Loading Overlay
 window.addEventListener('load', () => {
     setTimeout(() => {
@@ -214,20 +202,8 @@ const translations = {
         projDesc: "A selection of projects that showcase my technical expertise and problem-solving abilities",
         projectsUnderConstruction: "Projects are under construction",
         contactSubtitle: "Get In Touch",
-        contactTitle: "Let's Discuss Your Project",
-        contactDesc: "I'm available for consulting, full-time opportunities, and interesting projects",
-        contactInfoTitle: "Contact Information",
-        contactEmailTitle: "Email",
-        contactEmail: "pekersoy.berkay@gmail.com",
-        contactPhoneTitle: "Phone",
-        contactPhone: "+1 (415) 555-2671",
-        contactLocationTitle: "Location",
-        contactLocation: "Eskisehir, TR",
-        formNameLabel: "Full Name",
-        formEmailLabel: "Email Address",
-        formSubjectLabel: "Subject",
-        formMessageLabel: "Message",
-        formSubmitBtn: "Send Message",
+        contactTitle: "Let's Connect",
+        contactDesc: "Feel free to reach out through any of these platforms",
         footerCopyright: "© 2025 Berkay. All rights reserved.",
         footerPrivacy: "Privacy Policy",
         footerTerms: "Terms of Service"
@@ -288,20 +264,8 @@ const translations = {
         projDesc: "Teknik uzmanlığımı ve problem çözme yeteneklerimi gösteren projelerden seçmeler",
         projectsUnderConstruction: "Projeler yapım aşamasında",
         contactSubtitle: "İletişime Geç",
-        contactTitle: "Projenizi Konuşalım",
-        contactDesc: "Danışmanlık, tam zamanlı pozisyonlar ve ilginç projeler için ulaşabilirsiniz",
-        contactInfoTitle: "İletişim Bilgileri",
-        contactEmailTitle: "E-posta",
-        contactEmail: "pekersoy.berkay@gmail.com",
-        contactPhoneTitle: "Telefon",
-        contactPhone: "+90 555 555 5555",
-        contactLocationTitle: "Konum",
-        contactLocation: "Eskişehir, TR",
-        formNameLabel: "Ad Soyad",
-        formEmailLabel: "E-posta Adresi",
-        formSubjectLabel: "Konu",
-        formMessageLabel: "Mesaj",
-        formSubmitBtn: "Mesaj Gönder",
+        contactTitle: "Bağlantı Kuralım",
+        contactDesc: "Bu platformlardan herhangi biri üzerinden ulaşabilirsiniz",
         footerCopyright: "© 2025 Berkay. Tüm hakları saklıdır.",
         footerPrivacy: "Gizlilik Politikası",
         footerTerms: "Kullanım Şartları"
@@ -362,20 +326,8 @@ const translations = {
         projDesc: "技術力と課題解決力を示すプロジェクトのセレクション",
         projectsUnderConstruction: "プロジェクトは現在作成中です",
         contactSubtitle: "連絡先",
-        contactTitle: "プロジェクトについて話しましょう",
-        contactDesc: "コンサルティング、フルタイムの仕事、面白いプロジェクトのご相談をお待ちしています",
-        contactInfoTitle: "連絡情報",
-        contactEmailTitle: "メール",
-        contactEmail: "pekersoy.berkay@gmail.com",
-        contactPhoneTitle: "電話",
-        contactPhone: "+81 90-1234-5678",
-        contactLocationTitle: "所在地",
-        contactLocation: "エスキシェヒル, トルコ",
-        formNameLabel: "氏名",
-        formEmailLabel: "メールアドレス",
-        formSubjectLabel: "件名",
-        formMessageLabel: "メッセージ",
-        formSubmitBtn: "送信",
+        contactTitle: "つながりましょう",
+        contactDesc: "これらのプラットフォームからお気軽にお問い合わせください",
         footerCopyright: "© 2025 Berkay. 無断転載を禁じます。",
         footerPrivacy: "プライバシーポリシー",
         footerTerms: "利用規約"
@@ -458,18 +410,6 @@ function updateLanguage(lang) {
     document.getElementById('contactSubtitle').textContent = translations[lang].contactSubtitle;
     document.getElementById('contactTitle').textContent = translations[lang].contactTitle;
     document.getElementById('contactDesc').textContent = translations[lang].contactDesc;
-    document.getElementById('contactInfoTitle').textContent = translations[lang].contactInfoTitle;
-    document.getElementById('contactEmailTitle').textContent = translations[lang].contactEmailTitle;
-    document.getElementById('contactEmail').textContent = translations[lang].contactEmail;
-    document.getElementById('contactPhoneTitle').textContent = translations[lang].contactPhoneTitle;
-    document.getElementById('contactPhone').textContent = translations[lang].contactPhone;
-    document.getElementById('contactLocationTitle').textContent = translations[lang].contactLocationTitle;
-    document.getElementById('contactLocation').textContent = translations[lang].contactLocation;
-    document.getElementById('formNameLabel').textContent = translations[lang].formNameLabel;
-    document.getElementById('formEmailLabel').textContent = translations[lang].formEmailLabel;
-    document.getElementById('formSubjectLabel').textContent = translations[lang].formSubjectLabel;
-    document.getElementById('formMessageLabel').textContent = translations[lang].formMessageLabel;
-    document.getElementById('formSubmitBtn').querySelector('span:last-child').textContent = translations[lang].formSubmitBtn;
     // Footer
     document.getElementById('footerCopyright').textContent = translations[lang].footerCopyright;
     document.getElementById('footerPrivacy').textContent = translations[lang].footerPrivacy;
